@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+function Square() {
+  return <button className="square">X</button>;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <main className="app-body">
+        <h1>TIC-TAC-TOE</h1>
+        <div className="board">
+          <div className="board-row">
+            <Square value="1" />
+            <Square value="2" />
+            <Square value="3" />
+          </div>
+          <div className="board-row">
+            <Square value="1" />
+            <Square value="2" />
+            <Square value="3" />
+          </div>
+          <div className="board-row">
+            <Square value="1" />
+            <Square value="2" />
+            <Square value="3" />
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
